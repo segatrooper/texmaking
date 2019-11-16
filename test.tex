@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage{times}
+%margins
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{Lee \thepage}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength\headsep{.333in}
+%this is called a comment lol. I highly suggest writing this
+\usepackage[style=mla, backend=biber]{biblatex}
+\addbibresource{ref.bib}
+
+\begin{document}
+\begin{flushleft}
+Dong Yoon Lee\\
+Terence Tao\\
+Math\\
+\today
+\end{flushleft}
+% we'll deal with the extra space in a later video
+\begin{center}
+This is a title \citep{google}
+\end{center}
+
+
+``Hi this is a test''
+\nocite{*}
+\printbibliography
+\end{document}
